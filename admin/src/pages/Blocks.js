@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import ContentBlock from '../components/macro/contentblock/ContentBlock'
 
 function Comp(props) {
 
     return(
         <>
-        <h1>BLOCKS</h1>
+        <ContentBlock></ContentBlock>
         </>
     )
 }

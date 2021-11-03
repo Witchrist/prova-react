@@ -11,12 +11,14 @@ function App() {
   return (
     <>
       <Router>
-        <Routes/>
         <Sidebar/>
       <Header/>
-      <div className="container-fluid content-top-gaps">
+      <div class="main-content">
+        <div className="container-fluid content-top-gap">
+        <Routes/>
         
-      <Footer/>
+        <Footer/>
+        </div>
       </div>
       </Router>
     </>

@@ -1,10 +1,12 @@
 import React from 'react';
-import PricingTableList from '../components/macro/PricingTableList';
+import PricingTableListV1 from '../components/macro/pricingtable/v1/PricingTableList';
+import PricingTableListV2 from '../components/macro/pricingtable/v2/PricingTableList';
 function Comp(props) {
 
     return(
         <>
-        <PricingTableList></PricingTableList>
+        <PricingTableListV1></PricingTableListV1>
+        <PricingTableListV2></PricingTableListV2>
         </>
     )
 }
