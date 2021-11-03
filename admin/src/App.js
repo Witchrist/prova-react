@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Router>
-        <Sidebar/>
+      <Sidebar/>
       <Header/>
       <div class="main-content">
         <div className="container-fluid content-top-gap">

@@ -25,7 +25,7 @@ function Comp(props) {
                 type="password"
                 placeholder="Insira sua senha">
         </Input>
-        <Checkbox/>
+        <Checkbox label="checkbox1" text="Lembrar minha senha"/>
         <Button text="Enviar"></Button>
         </Form>
         <Form>
@@ -63,9 +63,14 @@ function Comp(props) {
                             name="Estado"
                             column={4}>
                 </Select>
+                <Input label="inputCep"
+                            name="CEP"
+                            type="text"
+                            column={2}>
+                </Input>
             </FormRow>
 
-        <Checkbox/>
+        <Checkbox label="checkbox2" text="Gravar endereço"/>
         <Button text="Enviar"></Button>
         </Form>
         </>

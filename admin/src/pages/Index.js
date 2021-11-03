@@ -1,4 +1,6 @@
 import React from 'react';
+import Statistic from "../components/micro/index/Statistic"
+import StatisticRow from '../components/macro/index/StatisticRow'
 
 function Comp(props) {
 
@@ -10,46 +12,12 @@ function Comp(props) {
         </div>
 
         {/* <!-- statistics data --> */}
-        <div class="statistics">
-          <div class="row">
-            <div class="col-xl-6 pr-xl-2">
-              <div class="row">
-                <div class="col-sm-6 pr-sm-2 statistics-grid">
-                  <div class="card card_border border-primary-top p-4">
-                    <i class="lnr lnr-users"> </i>
-                    <h3 class="text-primary number">29.75 M</h3>
-                    <p class="stat-text">Total Users</p>
-                  </div>
-                </div>
-                <div class="col-sm-6 pl-sm-2 statistics-grid">
-                  <div class="card card_border border-primary-top p-4">
-                    <i class="lnr lnr-eye"> </i>
-                    <h3 class="text-secondary number">51.25 K</h3>
-                    <p class="stat-text">Daily Visitors</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-6 pl-xl-2">
-              <div class="row">
-                <div class="col-sm-6 pr-sm-2 statistics-grid">
-                  <div class="card card_border border-primary-top p-4">
-                    <i class="lnr lnr-cloud-download"> </i>
-                    <h3 class="text-success number">166.89 M</h3>
-                    <p class="stat-text">Downloads</p>
-                  </div>
-                </div>
-                <div class="col-sm-6 pl-sm-2 statistics-grid">
-                  <div class="card card_border border-primary-top p-4">
-                    <i class="lnr lnr-cart"> </i>
-                    <h3 class="text-danger number">1,250k</h3>
-                    <p class="stat-text">Purchased</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <StatisticRow>
+                <Statistic title="users" value="30.59"/>
+                <Statistic title="visitors" value="61.75"/>
+                <Statistic title="downloads" value="200.10"/>
+                <Statistic title="purchased" value="2,500"/>
+        </StatisticRow>
         {/* <!-- //statistics data --> */}
 
         {/* <!-- charts --> */}

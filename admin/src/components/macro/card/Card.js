@@ -1,7 +1,15 @@
 import React from 'react'
+import CardText from '../../micro/card/CardText'
+import Citation from '../../micro/card/Citation'
 
 function Card(props) {
 
+    let highlight = ""
+
+    if(props.highlight){
+        highlight = " bg-primary text-white text-center"
+    }
+    
     function checkTitle(){
         if(props.title){
             return(
@@ -13,24 +21,21 @@ function Card(props) {
         return(
             <>
                 <div class="card">
-                  <img src={props.image} class="card-img-top" alt="..."/>
+                  <img src={props.image} className="card-img-top" alt="..."/>
                 </div>
             </>
         )
     } else {
         return(
             <>
-                <div class="card p-3">
-                    <blockquote class="blockquote mb-0 card-body">
+                <div className={`card p-3`+highlight}>
+                    <blockquote className="blockquote mb-0 card-body">
                         {checkTitle()}
-                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
-                          ante.
-                        </p>
-                        <footer class="blockquote-footer">
-                            <small class="text-muted">
-                                Someone famous in <cite title="Source Title">Source Title</cite>
-                            </small>
-                        </footer>
+                        {props.highlight ? <CardText text={props.text} highlight/>: 
+                        <CardText text={props.text}/>}
+                        {props.citation!=null && props.highlight ? <footer className="blockquote-footer">
+                        <Citation text={props.citation} highlight/>
+                        </footer> : null}
                     </blockquote>
                 </div>
             </>
