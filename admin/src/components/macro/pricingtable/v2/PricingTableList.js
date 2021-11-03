@@ -1,14 +1,14 @@
 import React from 'react';
 import PricingTable from '../v2/PricingTable';
-import CardHeading from '../../../micro/card/CardHeading'
+import ComponentHeading from '../../../micro/ComponentHeading'
 
-function Comp(props) {
+function PricingTableList(props) {
 
     return(
         <>
         <div className="pricing-version-2">
             <div className="card card_border mb-5">
-            <CardHeading header="Pricing Tables - Version 2"/>
+            <ComponentHeading header="Pricing Tables - Version 2"/>
                 <div className="card-body">
                     <div className="row px-2">
                         <PricingTable price={19}
@@ -31,4 +31,4 @@ function Comp(props) {
     )
 }
 
-export default Comp
+export default PricingTableList

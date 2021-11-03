@@ -1,13 +1,13 @@
 import React from 'react';
-import CardHeading from '../../micro/card/CardHeading'
+import ComponentHeading from '../../micro/ComponentHeading'
 
-function Comp(props) {
+function CardHeading(props) {
 
     return(
         <>
         <section class="template-cards">
             <div class="card card_border mb-5">
-                <CardHeading header={props.header}></CardHeading>
+                <ComponentHeading header={props.header}></ComponentHeading>
                 <div class="card-body">
                     <div class="card-columns">
                         {props.children}
@@ -19,4 +19,4 @@ function Comp(props) {
     )
 }
 
-export default Comp
+export default CardHeading

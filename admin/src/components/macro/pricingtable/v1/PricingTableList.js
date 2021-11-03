@@ -1,6 +1,6 @@
 import React from 'react';
 import PricingTable from './PricingTable';
-import CardHeading from '../../../micro/card/CardHeading'
+import PricingHeading from '../../../micro/ComponentHeading'
 
 function PricingTableList(props) {
 
@@ -8,7 +8,7 @@ function PricingTableList(props) {
         <>
         <section className="pricing">
             <div className="card card_border mb-5">
-                <CardHeading header="Pricing Tables - Version 1"/>
+                <PricingHeading header="Pricing Tables - Version 1"/>
                 <div class="card-body">
                     <section className="w3l-pricing1">
                         <div className="row px-2">

@@ -6,11 +6,13 @@ import ContentFeature from '../components/micro/contentblock/ContentFeature'
 import ContentTitle from '../components/micro/contentblock/ContentBlockTitle'
 import ContentText from '../components/micro/contentblock/ContentBlockText'
 import Button from '../components/micro/button/Button'
+import BlockHeading from '../components/micro/ComponentHeading'
 
 function Comp(props) {
 
     return(
         <>
+        <BlockHeading header="Content Blocks"/>
         <ContentBlockRight>
             <ContentTitle title="About Content Block"/>
             <ContentText/>
