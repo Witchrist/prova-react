@@ -12,11 +12,9 @@ function Comp(props) {
           <div class="card-body py-3 p-0">
             <div class="row">
               <div class="col-lg-6 align-self pr-lg-4">
-                <ContentTitle/>
-                <ContentText/>
-                <Button text="Read More"/>
+                {props.children}
               </div>
-              <ContentImage image="https://www.crushpixel.com/big-static15/preview4/hand-man-working-laptop-computer-2096371.jpg"/>
+              <ContentImage image="https://media.gettyimages.com/photos/doctor-on-the-phone-and-using-notebook-picture-id1213481623"/>
             </div>
           </div>
         </div>

@@ -4,7 +4,7 @@ function Comp(props) {
 
     return(
         <>
-            <h3 class="block__title mb-lg-4">About Content Block</h3>
+            <h3 class="block__title mb-lg-4">{props.title}</h3>
         </>
     )
 }

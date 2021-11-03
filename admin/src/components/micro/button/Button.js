@@ -4,7 +4,7 @@ function Button(props) {
 
     return(
         <>
-            <a href={props.href} class="btn btn-style btn-primary">{props.text}</a>
+            <a href={props.href} class="btn btn-style btn-primary m-1">{props.text}</a>
         </>
     )
 }
