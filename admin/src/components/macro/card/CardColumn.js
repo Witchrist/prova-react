@@ -5,11 +5,11 @@ function CardHeading(props) {
 
     return(
         <>
-        <section class="template-cards">
-            <div class="card card_border mb-5">
+        <section className="template-cards">
+            <div className="card card_border mb-5">
                 <ComponentHeading header={props.header}></ComponentHeading>
-                <div class="card-body">
-                    <div class="card-columns">
+                <div className="card-body">
+                    <div className="card-columns">
                         {props.children}
                     </div>
                 </div>

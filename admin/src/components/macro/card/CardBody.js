@@ -8,7 +8,7 @@ function CardBody(props) {
 
     return(
         <>
-            <div class="card">
+            <div className="card">
                 <img src={Imagem1} className="card-img-top" alt="..."/>
                 <div className="card-body">
                     <CardTitle title={props.title}></CardTitle>

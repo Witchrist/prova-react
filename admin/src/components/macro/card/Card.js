@@ -20,7 +20,7 @@ function Card(props) {
     if(props.image){
         return(
             <>
-                <div class="card">
+                <div className="card">
                   <img src={props.image} className="card-img-top" alt="..."/>
                 </div>
             </>
