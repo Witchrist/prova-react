@@ -4,11 +4,11 @@ function Comp(props) {
 
     return(
         <>
-        <div className="statistics">
-            <div className="row">
+        <div className="chart">
+          <div className="row">
             {props.children}
-            </div>
-        </div>
+          </div>
+          </div>
         </>
     )
 }
